@@ -1,3 +1,15 @@
+<?php
+   if(isset($_POST['logout'])){
+     
+     //destroy session and cookie
+     unset($_COOKIE['csrf_session_cookie']);
+     setcookie('csrf_session_cookie', null, -1, '/');
+     unset($_SESSION);
+   
+     // redirect to login page
+     header("location: login.php");
+   }
+   ?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -9,29 +21,15 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/mdbpro.min.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-         <!-- Navbar brand -->
-         <a class="navbar-brand" href="#">SLIIT SSD Assignment 01</a>
-         <!-- Collapse button -->
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <!-- Collapsible content -->
-         <div class="collapse navbar-collapse" id="basicExampleNav">
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                  </a>
-               </li>
+      <nav class="navbar navbar-expand-lg navbar-dark indigo">
+         <a class="navbar-brand" href="#">Navbar w/ text</a>  
+         <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">     
             </ul>
-            <!-- Links -->
+            <form class="nav-link" method="POST" action="header.php">
+               <button class="btn btn-link" type="submit" value="Logout" name="logout">Logout</button>
+            </form>
          </div>
-         <!-- Collapsible content -->
       </nav>
-      <!--/.Navbar-->
    </head>
 </html>
