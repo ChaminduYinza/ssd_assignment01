@@ -1,7 +1,7 @@
 <?php
    session_start();
    
-   if(isset($_COOKIE['csrf_session_cookie']) && isset($_SESSION['csrf_session'])){
+   if(isset($_COOKIE['session_cookie']) && isset($_SESSION['session'])){
    	header('Location: index.php');
       }
      else{
@@ -9,9 +9,9 @@
    	if (isset($_POST['username']) && isset($_POST['password'])){
    		if ($_POST['username'] == "chamindu" && $_POST['password'] == "password"){
                    //Set session variable
-               $_SESSION["csrf_session"] = $_POST['username'] . $_POST['password'];    
-               //Set session in a coookie named'csrf_session_cookie' 
-               setcookie("csrf_session_cookie", session_id(), (time() + (56400)), "/");
+               $_SESSION["session"] = $_POST['username'] . $_POST['password'];    
+               //Set session in a coookie named'session_cookie' 
+               setcookie("session_cookie", session_id(), (time() + (56400)), "/");
                generateToken(session_id());
    			header('Location: index.php');
    			} else{

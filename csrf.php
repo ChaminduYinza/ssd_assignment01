@@ -2,7 +2,7 @@
    session_start();   
    if (isset($_POST['csrf_request']))
    	{
-   	if ($_POST['csrf_request'] == $_COOKIE['csrf_session_cookie']){
+   	if ($_POST['csrf_request'] == session_id()){
    		echo $_SESSION['csrf_token_string'];
    		} else	{
    		echo "----------";

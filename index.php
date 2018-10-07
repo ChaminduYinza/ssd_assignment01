@@ -1,6 +1,6 @@
 <?php
    session_start();    
-   if(!isset($_COOKIE['csrf_session_cookie']) || !isset($_SESSION['csrf_session'])){
+   if(!isset($_COOKIE['session_cookie']) || !isset($_SESSION['session'])){
        header("location: login.php");
    }
    ?>
@@ -47,7 +47,7 @@
               type: 'post',
               async: false,
               data: {
-                  'csrf_request': '<?php echo $_COOKIE['csrf_session_cookie'] ?>'
+                  'csrf_request': '<?php echo $_COOKIE['session_cookie'] ?>'
               },
               success: function (data) {
                   document.getElementById("csrf_token").value = data;

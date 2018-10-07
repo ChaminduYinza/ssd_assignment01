@@ -2,8 +2,8 @@
    if(isset($_POST['logout'])){
      
      //destroy session and cookie
-     unset($_COOKIE['csrf_session_cookie']);
-     setcookie('csrf_session_cookie', null, -1, '/');
+     unset($_COOKIE['session_cookie']);
+     setcookie('session_cookie', null, -1, '/');
      unset($_SESSION);
    
      // redirect to login page
