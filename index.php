@@ -7,7 +7,7 @@
 <?php include ("header.php") ?>
 <body>
    <form id="login-form" name="login-form" action="csrf.php" method="POST">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog animated bounceIn" role="document">
          <div class="modal-content">
             <div class="modal-header text-center">
                <h4 class="modal-title w-100 font-weight-bold">CSRF Synchronizer Token Pattern</h4>          

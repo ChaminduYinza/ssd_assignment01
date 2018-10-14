@@ -1,7 +1,7 @@
 <?php include ("header.php") ?>
 <body>
    <div class="container">
-      <p class="text-center animated rollIn" style="font-size: 127%;margin-top: 38px;font-weight: 600;">
+      <p class="text-center animated tada" style="font-size: 127%;margin-top: 38px;font-weight: 600;">
          Congratulations :  CSRF Token in the hidden fields matches with CSRF token in the server side               
       </p>
       <div class="row">

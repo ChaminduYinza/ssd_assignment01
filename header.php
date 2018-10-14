@@ -21,7 +21,7 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/mdbpro.min.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
-      <nav class="navbar navbar-expand-lg navbar-dark indigo">
+      <nav class="navbar navbar-expand-lg navbar-dark indigo mainbody">
          <a class="navbar-brand" href="index.php">Synchronizer Token Pattern</a>  
          <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">     
