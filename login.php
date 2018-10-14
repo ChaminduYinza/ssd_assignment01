@@ -20,7 +20,7 @@
    		}
    	}
     function generateToken($formName){
-        return $_SESSION['csrf_token_string'] = base64_encode(openssl_random_pseudo_bytes(32));
+        return $_SESSION['csrf_token_string'] = base64_encode(openssl_random_pseudo_bytes(32)).$formName;
     } 
    ?>
 <!DOCTYPE html>

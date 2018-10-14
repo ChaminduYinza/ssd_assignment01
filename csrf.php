@@ -5,7 +5,7 @@
    	if ($_POST['csrf_request'] == session_id()){
    		echo $_SESSION['csrf_token_string'];
    		} else	{
-   		echo "----------";
+   		echo "Invalid Request....."
    		}
    	} else if (isset($_POST['verify']))	{
    	if ($_POST['csrf_token'] == $_SESSION['csrf_token_string']){
