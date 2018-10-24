@@ -18,5 +18,5 @@ Install XAMP OR WAMP
 4. Select the project and continue
 
 # Credentials
-• Username : chamindu
-• Password : password
+1. Username : chamindu 
+2. Password : password
