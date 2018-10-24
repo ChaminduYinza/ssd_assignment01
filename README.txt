@@ -1,25 +1,22 @@
-Material Design for Bootstrap
+# IT15000118 CSRF Dobule-Submit-Cookie-Pattern
 
-version: MDB Free 4.5.11
+This project was implemented using php
 
-Documentation:
-https://mdbootstrap.com/
+## Run
+Install XAMP OR WAMP
 
-Getting started:
-https://mdbootstrap.com/getting-started/
+# Guide for deploy on WAMP
+1. Clone the project into www folder in wamp
+2. Start WAMP Server
+3. Navigate to http://localhost:80/
+4. Select the project and continue
 
-Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/bootstrap-tutorial/
-MDB-Wordpress: https://mdbootstrap.com/wordpress-tutorial/
+# Guide for deploy on XAMPP
+1. Clone the project into HTDocs folder in wamp
+2. Start WAMP Server
+3. Navigate to http://localhost:80/
+4. Select the project and continue
 
-Templates:
-https://mdbootstrap.com/templates/
-
-License:
-https://mdbootstrap.com/license/
-
-Support:
-https://mdbootstrap.com/forums/forum/support/
-
-Contact:
-office@mdbootstrap.com
+#Credentials
+Username : chamindu
+Password : password
