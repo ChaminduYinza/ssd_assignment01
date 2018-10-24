@@ -1,4 +1,4 @@
-# IT15000118 CSRF Dobule-Submit-Cookie-Pattern
+# IT15000118 CSRF Synchronizer-Token-Pattern
 
 This project was implemented using php
 
